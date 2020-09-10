@@ -1,4 +1,4 @@
-package com.example.app_ctl_product_manager
+package com.matteo.appctlproductmanager
 
 import io.flutter.embedding.android.FlutterActivity
 
