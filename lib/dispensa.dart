@@ -66,6 +66,8 @@ class Dispensa_State extends State<Dispensa> {
 }
 
 class ListaDispensa extends StatelessWidget {
+  bool test;
+
   @override
   Widget build(BuildContext context) {
     Firebase.initializeApp();
@@ -88,10 +90,49 @@ class ListaDispensa extends StatelessWidget {
             return Padding(
               padding: const EdgeInsets.all(8.0),
               child: Card(
-                child: ListTile(
-                  title: new Text(
-                      "${document.data()['Nome']} Validade: ${document.data()['DataValidade']}   Quantidade:${document.data()['Quantidade']}"),
-                  subtitle: new Text(document.data()['Descrição']),
+                child: Container(
+                  child: ListTile(
+                    title: new Text(
+                        "${document.data()['Nome']} Validade: ${document.data()['DataValidade']}   Quantidade:${document.data()['Quantidade']}"),
+                    subtitle: new Text(document.data()['Descrição']),
+                    onTap: () {
+                      detalhes(context, snapshot, document);
+                    },
+                    trailing: Wrap(spacing: 12, // space between two icons
+                        children: <Widget>[
+                          IconButton(
+                              icon: Icon(Icons.delete),
+                              onPressed: () {
+                                snapshot.data.docs.remove(document.id);
+                                showDialog(
+                                  context: context,
+                                  builder: (BuildContext context) {
+                                    return AlertDialog(
+                                        title: Text(
+                                            "Deseja excluir esse produto?"),
+                                        actions: <Widget>[
+                                          FlatButton(
+                                            child: Text("Sim"),
+                                            onPressed: () {
+                                              print("True");
+                                              snapshot.data.docs
+                                                  .remove(document.id);
+                                              Navigator.pop(context);
+                                            },
+                                          ),
+                                          FlatButton(
+                                            child: Text("Não"),
+                                            onPressed: () {
+                                              print("False");
+                                              Navigator.pop(context);
+                                            },
+                                          ),
+                                        ]);
+                                  },
+                                );
+                              }),
+                        ]),
+                  ),
                 ),
               ),
             );
@@ -109,42 +150,54 @@ class dispensaBuscar extends StatelessWidget {
   }
 }
 
-// class ColsutarDis extends StatelessWidget {
-//   var db = FirebaseFirestore.instance;
-//   //var snapshots = FirebaseFirestore.instance.collection('Dispensa1').snapshots();
-//   var Dis = FirebaseFirestore.instance.collection('Dispensa1').get();
-
-//   @override
-//   Widget build(BuildContext context) {
-//     return Column(
-//       children: <Widget>[
-//         Expanded(
-//           child: StreamBuilder<QuerySnapshot>(
-//               stream: getlistDispensa(),
-//               builder: (context, snapshot) {
-//                 switch (snapshot.connectionState) {
-//                   case ConnectionState.none:
-//                   case ConnectionState.waiting:
-//                     return Center(
-//                       child: CircularProgressIndicator(),
-//                     );
-//                   default:
-//                     List<DocumentSnapshot> dc = snapshot.data.docs;
-//                     return ListView.builder(
-//                         itemCount: dc.legth,
-//                         itemBuilder: (context, index) {
-//                           return ListTile(
-//                             title: Text(items[index].nome),
-//                             subtitle: (items[index].quantidade),
-//                           );
-//                         });
-//                 }
-//               }),
-//         ),
-//       ],
-//     );
-//   }
-
 Stream<QuerySnapshot> getlistDispensa() {
   return FirebaseFirestore.instance.collection('Dispensa1').snapshots();
+}
+
+detalhes(context, snapshot, document) {
+  showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return Center(
+          child: Container(
+            width: 700.0,
+            height: 400.0,
+            child: AlertDialog(
+              title: Text("Detalhes"),
+              content: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisSize: MainAxisSize.max,
+                  children: <Widget>[
+                    Text("Nome do Produto: ${document.data()['Nome']}"),
+                    Text("Quantidade: ${document.data()['Quantidade']}"),
+                    Text(
+                        "Data de Validade: ${document.data()['DataValidade']}"),
+                    Text(
+                        "Codigo de Barras: ${document.data()['Código de barras']}"),
+                    Text("Descrição: ${document.data()['Descrição']}"),
+                    Row(children: [
+                      IconButton(
+                        icon: Icon(Icons.keyboard_backspace),
+                        onPressed: () {
+                          Navigator.pop(context);
+                        },
+                      ),
+                      IconButton(
+                        icon: Icon(Icons.edit),
+                        onPressed: () {
+                          //snapshot.data.docs.remove(document.id);
+                        },
+                      ),
+                      IconButton(
+                        icon: Icon(Icons.delete),
+                        onPressed: () {
+                          snapshot.data.docs.remove(document.id);
+                        },
+                      ),
+                    ]),
+                  ]),
+            ),
+          ),
+        );
+      });
 }
