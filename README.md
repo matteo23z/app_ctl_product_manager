@@ -5,7 +5,7 @@
 ## Informações
 - Projeto do Curso de Análise e Desenvolvimento de Sistemas da Universade São Fancisco (USF) de Itatiba - SP;
 - Disciplina: Desenvolvimento para Sistemas Móveis;
-- Monitorado pelo Professor Matias Filhos;
+- Monitorado pelo Professor Matias Filho;
 - Criado por Matteo Figueiredo da Silva;
 
 ## Objetivo
@@ -29,16 +29,17 @@ Projeto voltado para criação de um app mobile que irá monitorar o estoque de 
 ### Código
 O app está pesado, com mais de 100 Mb como mostra na imagem acima.É preciso fazer:
 - Melhorias de código na estrutura view;
-- Emplementar melhor o modelo MVC.
+- Implementar melhor o modelo MVC.
 
 ### Banco de Dados
-- Melhorar a estrutura das coleções para disponibilizar para uso do Público.
+- Melhorar a estrutura das coleções para disponibilizar uso do app do público.
 
 ### Usabilidade
-- Emplementar login com a conta do google;
-- Emplemetar a criação das dispensas;
+- Implementar login com a conta do google;
+- Implemetar a criação das dispensas;
 - Cricação da tela de introdução para o usuário ao abrir o app pela primeira a vez, contendo informações de como funciona o app, para não ficar perdido;
 - Criação da tela de edição dos produtos;
 - Criação da tela de configurações, dúvidas, e informações;
 - Criação de notificações para comunicar informações com o usuário;
-- Emplemetar um botão rápido de atualização da quantidade do produto;
+- Implemetar um botão rápido de atualização da quantidade do produto;
+- Terminar de implemetar a classe que redimenciona a tela do app (appSize.dart);
