@@ -18,7 +18,7 @@ Projeto voltado para criação de um app mobile que irá monitorar o estoque de 
 - Banco de Dados: Firebase;
 
 ## Como Funciona
-**Introdução:** O app cria dispensas que podem adiministrar uma lista de produtos, dispensas na qual o usuário poderá organizar da sua maneira, como por exemplo separar cada uma com um tipo de produto diferente. E na lista as validades são verificadas, e se algum dos produtos já passou da sua data de vencimento os cards dos mesmos viram vermelhos ou amarelos se faltarem 30 dias para o vencimento.
+**Introdução:** O app cria dispensas que podem adiministrar uma lista de produtos, dispensas na qual o usuário poderá organizar da sua maneira, como por exemplo: separar cada uma com um tipo de produto diferente. E na lista as validades são verificadas, e se algum dos produtos já passou da sua data de vencimento os cards dos mesmos ficam vermelhos ou amarelos se faltarem 30 dias para o vencimento, alertando visualmente o usuário.
 
 #### Tudo começa fazendo o login ou cadastro no app.
 #### Logo após irá entrar na tela inicial, e para criar um dispensa é só arrastar para o lado ou clicar no icone que se encontra na parte superior à esqueda e clicar no botão Criar Nova Dispensa.
@@ -28,8 +28,8 @@ Projeto voltado para criação de um app mobile que irá monitorar o estoque de 
 ## Planos Futuros
 ### Código
 O app está pesado, com mais de 100 Mb como mostra na imagem acima.É preciso fazer:
-- Melhorias código na estrutura view;
-- Emplementar modelo MVC.
+- Melhorias de código na estrutura view;
+- Emplementar melhor o modelo MVC.
 
 ### Banco de Dados
 - Melhorar a estrutura das coleções para disponibilizar para uso do Público.
