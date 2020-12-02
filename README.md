@@ -13,7 +13,6 @@
 Projeto voltado para criação de um app mobile que irá monitorar o estoque de produtos do usuário, como por exemplo: alimentos, e monitorar também suas datas de validade para relizar um controle fácil e rápido, e auxiliar na repocição mensal desses produtos. 
 
 ## Tecnologias
-- Android
 - Linguagem: Dart (Flutter);
 - Banco de Dados: Firebase;
 
