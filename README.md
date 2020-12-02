@@ -19,7 +19,7 @@ Projeto voltado para criação de um app mobile que irá monitorar os produtos d
 ## Como funciona
 
 
-## Projetos Futuros
+## Planos Futuros
 ### Código
 O app está pesado, com mais de 100 Mb como mostra na imagem acima.É preciso fazer:
 - Melhorias código na estrutura view;
@@ -31,6 +31,6 @@ O app está pesado, com mais de 100 Mb como mostra na imagem acima.É preciso fa
 ### Usabilidade
 - Emplementar login com a conta do google;
 - Emplemetar a criação das dispensas;
-- Cricação da tela de introdução ao abrir o app pela primeira a vez, com informações de como funciona app, para o usuários não ficarem perdidos;
+- Cricação da tela de introdução para o usuário ao abrir o app pela primeira a vez, contendo informações de como funciona o app, para não ficar perdido;
 - Criação da tela de edição dos produtos;
 - Criação da tela de configurações, dúvidas, e informações;
