@@ -1,12 +1,20 @@
 # ctl_product_manager - Projeto App Mobile 
 
-Projeto do Curso: de Análise e Desenvolvimento de Sistemas da Universade São Fancisco (USF) de Itatiba - SP;
+![controp logo](https://user-images.githubusercontent.com/69529755/100896259-3219e600-349d-11eb-8997-4cb5530d9402.png)
 
-Disciplina: Desenvolvimento para Sistemas Moveis;
+## Informações
+- Projeto do Curso de Análise e Desenvolvimento de Sistemas da Universade São Fancisco (USF) de Itatiba - SP;
+- Disciplina: Desenvolvimento para Sistemas Móveis;
+- Monitorado pelo Professor Matias Filhos;
+- Criado por Matteo Figueiredo da Silva;
 
-Monitorado Pelo: Professor Matias Filhos;
+## Objetivo
 
-Projeto voltado para criação de um app mobile que irá monitorar os produtos do usuário, como por exemplo: alimentos, e suas datas de validade para relizar um controle fácil e rápid, e auxiliar na repocição dos mesmos produtos. 
-A linguagem usada será dart (Flutter), o SGBD será o Firebase;
+Projeto voltado para criação de um app mobile que irá monitorar os produtos do usuário como por exemplo: alimentos, e monitorar também suas datas de validade para relizar um controle fácil e rápido, e auxiliar na repocição dos mesmos produtos. 
 
-Criado por: Matteo Figueiredo da Silva;
+## Tecnologias
+- Linguagem: Dart (Flutter);
+- Banco de Dados: Firebase;
+
+## Projetos Futuros
+
