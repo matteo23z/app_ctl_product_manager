@@ -7,43 +7,43 @@ class Produto {
   String Codebar;
   String Descr;
 
-  getNome() {
-    return Nome;
-  }
-
   void setNome(String nome) {
     Nome = nome;
   }
 
-  getQuant() {
-    return Quant;
+  getNome() {
+    return Nome;
   }
 
   void setQuant(String quant) {
     Quant = quant;
   }
 
-  getValidade() {
-    return Validade;
+  getQuant() {
+    return Quant;
   }
 
   void setValidade(String validade) {
     Validade = validade;
   }
 
-  getCodebar() {
-    return Codebar;
+  getValidade() {
+    return Validade;
   }
 
   void setCodebar(String codebar) {
     Codebar = codebar;
   }
 
-  getDescr() {
-    return Descr;
+  getCodebar() {
+    return Codebar;
   }
 
   void setDescr(String descr) {
     Descr = descr;
+  }
+
+  getDescr() {
+    return Descr;
   }
 }

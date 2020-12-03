@@ -1,8 +1,8 @@
+import 'package:flutter/cupertino.dart';
 import 'package:app_ctl_product_manager/common/appcolor.dart';
 import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
 import 'package:barcode_scan/barcode_scan.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
@@ -10,13 +10,13 @@ import 'package:intl/intl.dart';
 
 import 'dispensa.dart';
 
-class CriarProduto extends StatefulWidget {
-  static const routeNome = 'CriarProduto';
+class EditarProduto extends StatefulWidget {
+  static const routeNome = 'EditarProduto';
   @override
-  CriarProduto_State createState() => CriarProduto_State();
+  EditarProdutoState createState() => EditarProdutoState();
 }
 
-class CriarProduto_State extends State<CriarProduto> {
+class EditarProdutoState extends State<EditarProduto> {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
@@ -24,11 +24,11 @@ class CriarProduto_State extends State<CriarProduto> {
           appBar: AppBar(
             title: Row(children: <Widget>[
               Text(
-                "Criar Produto",
+                "Editar Produto",
                 style: TextStyle(fontSize: 25.0),
               ),
               new Container(
-                padding: new EdgeInsets.only(left: 60.0),
+                padding: new EdgeInsets.only(left: 50.0),
                 child: new Image.network(
                   "https://firebasestorage.googleapis.com/v0/b/app-ctl-product-manager.appspot.com/o/imags%2FIcons%2Fcontrop%20logo2.png?alt=media&token=2027f457-198d-4d61-b540-675a5cbed277",
                   width: 60,
@@ -143,22 +143,7 @@ class formulario extends StatelessWidget {
                       },
                       onSaved: (DateTime dateTime) => _dateTime = dateTime,
                     ),
-
-                    // child: TextFormField(
-                    //   maxLengthEnforced: false,
-                    //   maxLines: null,
-                    //   keyboardType: TextInputType.datetime,
-                    // validator: (value) {
-                    //   if (value.isEmpty) {
-                    //     return 'Por Favor preencha o campo a cima';
-                    //   }
-                    //   return null;
-                    // },
-                    // onSaved: (String val) {
-                    //   validade = val;
-                    // },
                   ),
-                  //),
                   Container(
                       child: Text(
                     "Código de Barras",
@@ -208,12 +193,6 @@ class formulario extends StatelessWidget {
                       maxLengthEnforced: false,
                       maxLines: null,
                       keyboardType: TextInputType.text,
-                      // validator: (value) {
-                      //   if (value.isEmpty) {
-                      //     return 'Por Favor preencha o campo a cima';
-                      //   }
-                      //   return null;
-                      // },
                       onSaved: (String val) {
                         desc = val;
                       },
@@ -225,7 +204,6 @@ class formulario extends StatelessWidget {
                       padding: new EdgeInsets.only(
                           left: 40.0, top: 40.0, right: 40.0, bottom: 40.0),
                       width: 400.0,
-                      //height: 1.0,
                       child: RaisedButton(
                         color: Colors.white,
                         onPressed: () {
@@ -253,7 +231,7 @@ class formulario extends StatelessWidget {
                           }
                         },
                         child: Text(
-                          'Criar',
+                          'Editar',
                           style: TextStyle(color: Colors.black, fontSize: 20.0),
                         ),
                       ),

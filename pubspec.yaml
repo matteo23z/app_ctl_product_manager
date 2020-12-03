@@ -33,6 +33,9 @@ dependencies:
   path_provider: ^0.4.1
   barcode_scan: ^3.0.1
   qr_flutter: ^3.2.0
+  intl: ^0.16.1
+  datetime_picker_formfield: ^1.0.0
+  flutter_datetime_formfield: ^0.1.2
   
 dev_dependencies:
   flutter_test:
