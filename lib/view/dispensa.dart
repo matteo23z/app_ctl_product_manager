@@ -1,13 +1,13 @@
-import 'package:app_ctl_product_manager/criarProduto.dart';
-import 'package:app_ctl_product_manager/editarProduto.dart';
+import 'package:app_ctl_product_manager/view/criarProduto.dart';
+import 'package:app_ctl_product_manager/view/editarProduto.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:intl/intl.dart';
-import 'common/appcolor.dart';
-import 'model/modDispensa.dart';
+import 'package:app_ctl_product_manager/common/appcolor.dart';
+import 'package:app_ctl_product_manager/model/modDispensa.dart';
 
 ModDispensa dispen = new ModDispensa();
 final String pesq = dispen.getPesquisa();

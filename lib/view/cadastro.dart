@@ -3,7 +3,7 @@ import 'package:datetime_picker_formfield/datetime_picker_formfield.dart';
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-import 'common/appcolor.dart';
+import 'package:app_ctl_product_manager/common/appcolor.dart';
 import 'login.dart';
 
 class Cadastro extends StatefulWidget {

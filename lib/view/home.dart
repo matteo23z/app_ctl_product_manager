@@ -1,5 +1,5 @@
 import 'package:app_ctl_product_manager/common/appcolor.dart';
-import 'package:app_ctl_product_manager/dispensa.dart';
+import 'package:app_ctl_product_manager/view/dispensa.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
