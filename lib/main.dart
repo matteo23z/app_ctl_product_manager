@@ -1,13 +1,13 @@
-import 'package:app_ctl_product_manager/cadastro.dart';
+import 'package:app_ctl_product_manager/view/cadastro.dart';
 import 'package:app_ctl_product_manager/common/appcolor.dart';
-import 'package:app_ctl_product_manager/criarProduto.dart';
-import 'package:app_ctl_product_manager/dispensa.dart';
-import 'package:app_ctl_product_manager/editarProduto.dart';
-import 'package:app_ctl_product_manager/home.dart';
+import 'package:app_ctl_product_manager/view/criarProduto.dart';
+import 'package:app_ctl_product_manager/view/dispensa.dart';
+import 'package:app_ctl_product_manager/view/editarProduto.dart';
+import 'package:app_ctl_product_manager/view/home.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-import 'login.dart';
+import 'view/login.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
