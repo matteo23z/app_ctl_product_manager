@@ -15,6 +15,8 @@ Projeto voltado para criação de um app mobile que irá monitorar o estoque de 
 ## Tecnologias
 - Linguagem: Dart (Flutter);
 - Banco de Dados: Firebase;
+- Codificador: VScode;
+- Metodologia Ágil com Trello.
 
 ## Como Funciona
 **Introdução:** O app cria dispensas que podem adiministrar uma lista de produtos, dispensas na qual o usuário poderá organizar da sua maneira, como por exemplo: separar cada uma com um tipo de produto diferente. E na lista as validades são verificadas, e se algum dos produtos já passou da sua data de vencimento os cards dos mesmos ficam vermelhos ou amarelos se faltarem 30 dias para o vencimento, alertando visualmente o usuário.
@@ -51,12 +53,12 @@ O app está pesado, com mais de 100 Mb como mostra na imagem acima.É preciso fa
 - Criação de notificações para comunicar informações com o usuário;
 - Implemetar um botão rápido de atualização da quantidade do produto;
 - Terminar de implemetar a classe que redimenciona a tela do app (appSize.dart);
-- Terminar de implemetar a tela de edição dos produtos.
-- Terminar de implemetar a a barra de busca.
+- Terminar de implemetar a tela de edição dos produtos;
+- Terminar de implemetar a a barra de busca;
 - Terminar de implemetar a tela de menu nas outras telas;
 
 ### Design
 - Melhorias de interface;
 - Tirar o logo do flutter e colocar a logo do app;
 - Colocar mais detalhes nas telas;
-- Colocar transcrições entre as telas;
+- Colocar transcrições entre as telas.
