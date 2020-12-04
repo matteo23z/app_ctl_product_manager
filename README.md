@@ -3,7 +3,7 @@
 ![controp logo](https://user-images.githubusercontent.com/69529755/100896259-3219e600-349d-11eb-8997-4cb5530d9402.png)
 
 ## Informações
-- Projeto do Curso de Análise e Desenvolvimento de Sistemas da Universade São Fancisco (USF) de Itatiba - SP;
+- Projeto do Curso de Análise e Desenvolvimento de Sistemas da Universidade  São Francisco (USF) de Itatiba - SP;
 - Disciplina: Desenvolvimento para Sistemas Móveis;
 - Monitorado pelo Professor Matias Filho;
 - Criado por Matteo Figueiredo da Silva;
